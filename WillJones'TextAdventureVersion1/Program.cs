@@ -23,7 +23,7 @@ namespace WillJones_TextAdventureVersion1
             {
                 Console.WriteLine("PLEASE SWIPE YOUR SECURITY PASS ABOVE THE RED LINE PLEASE.");
                 Console.WriteLine("IF YOU DO NOT COMPLY, LETHAL FORCE IS AUTHORIZED AND WILL BE ACTIVATED");
-                Console.WriteLine("You notice that the little robot seems to be overheating, as there are little black puffs emanating from beneath its plastic shell. Perhaps it's malfunctioning?");
+                Console.WriteLine("You notice that the little robot seems to be overheating, as there are little black puffs emanating from beneath its' plastic shell. Perhaps it's malfunctioning?");
                 Console.WriteLine("DO YOU HAVE YOUR SECURITY PASS, ANSWER YES OR NO INTRUDER.");
                 response = Console.ReadLine();
                 if (response == "Yes")
@@ -43,17 +43,18 @@ namespace WillJones_TextAdventureVersion1
             {
                 Console.WriteLine("THANK YOU SIR. CAN I HELP YOU IN ANY OTHER FASHION?");
                 response = Console.ReadLine();
-                if (response == "Yes")
-                {
-                Console.WriteLine("EXCELLENT. FOLLOW ME SIR, AND I WILL ESCORT YOU TO CUSTOMS TO RECEIVE A COMPLEMENTARY SUBWAY COOKIE, COURTESY OF SUBWAY: EAT FRESH.");
-                Console.WriteLine("The droid begins to roll away, but suddenly it begins to fume with black smoke. It fizzles, and with a loud POP, explodes into tiny pieces.");
-                Console.WriteLine("Do you walk towards the broken robot?");
-                }
                 if (response == "No")
                 {
                 Console.WriteLine("THANK YOU VISITOR, IF YOU REQUIRE ANY FUTHER ASSISTANCE, PLEASE BE SURE TO CONTACT MARGE AT CUSTOMS.");
                 Console.WriteLine("The robot suddenly sputters, and before you can react, the droid shakes, and the last thing you see before your vision  turns dark is the bright flash of the droid's gun barrels.");
                 Console.WriteLine("Congratulations, you've lost.");
+                }
+
+                if (response == "Yes")
+                {
+                Console.WriteLine("EXCELLENT. FOLLOW ME SIR, AND I WILL ESCORT YOU TO CUSTOMS TO RECEIVE A COMPLEMENTARY SUBWAY COOKIE, COURTESY OF SUBWAY: EAT FRESH.");
+                Console.WriteLine("The droid begins to roll away, but suddenly it begins to fume with black smoke. It fizzles, and with a loud POP, explodes into tiny pieces.");
+                Console.WriteLine("Do you walk towards the broken robot?");
                 }
 
                 response = Console.ReadLine();
@@ -67,9 +68,25 @@ namespace WillJones_TextAdventureVersion1
                 {
                 Console.WriteLine("You walk away from the broken robot, which is still sputtering black fog and sparks. ");
                 Console.WriteLine("You walk down a corridor until you see a door. The door is creaked open, and a beam of light is shooting out from the   opening. ");
-                Console.WriteLine("You walk through the door, leaving this bizzare place behind.");
-                Console.WriteLine("Congratulations, you've won!");
+                Console.WriteLine("Do you walk through the door?");
+                
                 }
+
+                    if (response == "Yes")
+                    { 
+                    Console.WriteLine("You walk through the door, leaving this bizzare place behind.");
+                    Console.WriteLine("Congratulations, you've won!");
+                    }
+
+                    if (response == "No")
+                    {
+                    Console.WriteLine("You don't walk through the door, instead you close the door.");
+                    Console.WriteLine("You hear the door very loudly click shut, and you instinctly know that you probably won't be able to open it again.");
+                    Console.WriteLine("Just after closing the door, you realize that the beam of light shooting out of the door was the only thing keeping the corridor illuminated");
+                    Console.WriteLine("Considering the fact that human beings don't possess night vision, it is entirely plausible that you just locked yourself in a room with no door and no way to see anything.");
+                    Console.WriteLine("Congratulations, you lost.");
+                    }
+
 
 
 
